@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+body {
+    width: 100%;
+    position: relative;
+    background-color: rgb(235, 235, 235);
+}
+.bg {
+    position: absolute;
+    background: url('../img/background.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 490px;
+    z-index: -111;
+}
+.bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(0,0,0,.5);
+}
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+main .both {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+}
+.left {
+    width: 29%;
+    height: 100%;
+}
+.right {
+    width: 67%;
+    height: 100%;
+}
+.info {
+    display: flex;
+    align-items: start;
+
+}
+.block {
+    margin-top: 20px;
+    background-color: white;
+    padding: 40px 30px;
+}
+.block-grey {
+    background-color: rgb(0,0,0,.5);
+}
+.title {
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+.title__sec {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.photo {
+    width: 100%;
+    height: 500px;
+}
+.info {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.info__descr {
+    width: 43%;
+    padding: 30px;
+    padding-left: 70px;
+    color: white;
+    background-color: rgb(0,0,0,.5);
+}
+.list {
+    list-style: none;
+}
+.list li {
+    position: relative;
+    margin-bottom: 16px;
+}
+.list li::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -33px;
+    width: 20px;
+    height: 20px;
+    /* background: url("../img/icon.png") center center/cover no-repeat; */
+}
+.list li:last-child {
+    margin-bottom: 0;
+}
+.price {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.price__main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+.price__main span:first-child {
+    font-size: 20px;
+    color: orange;
+    text-decoration: line-through;
+}
+.price__main span:last-child {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-decoration: unset;
+}
+.price-block {
+    display: flex;
+    align-items: center;
+}
+.price__sale {
+    padding: 20px;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px #0094e8 solid;
+    color: #0094e8;
+    font-size: 36px;
+}
+
+.left__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+th {
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-main {
+    height: 80px;
+    background-color: #0094e8;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-main:hover {
+    background-color: orange;
+}
+.btn-sec {
+    border: 1px solid rgb(230, 230, 230);
+    margin-right: 20px;
+    height: 40px;
+}
+.btn-sec:hover {
+    background-color: white;
+    color: black;
+}
+.btn-sec:last-child {
+    margin-right: 0;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .input {
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+}
+form .btn {
+    width: 28%;
+    height: 40px;
+    border: none;
+    background: #0094e8;
+    cursor: pointer;
+}
+form .btn:hover {
+    background: #017bc2;
+}
+footer {
+    margin-top: 60px;
+    height: 300px;
+    background: url(../img/background.jpg);
+}
+
+.nav{
+    background: url(../img/background.jpg);
+   }
+   
+   .nav_header{
+     text-align: center;
+     padding: 4px 16px;
+     padding: 0.25rem 1rem;
+     
+     
+   
+   }
+
+   .logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+   .logo{
+     color:white;
+     font-size: 50px;
+     font-weight: bold;
+     text-decoration: none;
+     font-family: 'Chakra Petch', sans-serif;
+   }
+   /* end of nav */
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 100%;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

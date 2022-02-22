@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Greater than I Was</title>
+    <link rel="stylesheet" href="css/item1.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+         <div class="nav_header">
+            <a href="../index.html" class="logo">Ravein</a>
+         </div>
+        </nav>
+       </header>
+    <section class="bg"></section>
+    <main class="col-12">
+        <div class="container">
+            <button type="button" class="btn btn-dark" id="play" onclick="play();">Play</button>
+            <div class="title">21 Savage - i am﹥i was</div>
+            <div class="both">
+                <div class="left">
+                    <div class="photo">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                    
+                        <!-- Modal Content (The Image) -->
+                        <div class="modal-content" id="img01">
+                        </div>
+                    
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+                    <div class="left__descr block block-grey">
+                        <table>
+                            <tr>
+                                <th>Released:</th>
+                                <td>December 21, 2018</td>
+                            </tr>
+                            <tr>
+                                <th>Genre:</th>
+                                <td>Hip hop</td>
+                            </tr>
+                            <tr>
+                                <th>Length:</th>
+                                <td>54:54    </td>
+                            </tr>
+                            <tr>
+                                <th>Label:</th>
+                                <td>Slaughter Gang</td>
+                            </tr>
+                            <tr>
+                                <th>Producer:</th>
+                                <td>30 Roc</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="left__same block">
+                        <div class="alert alert-secondary" role="alert">
+                            <h5>Similar Albums</h5>
+                          </div>
+                        <div class="articles">
+                            <article>
+                                <div class="article__img"><img src="" alt=""></div>
+                                <div class="article__header"></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <div class="info__descr">
+                            <ul class="list">
+                                <li class="list__li"><span class="blinking"><i class="fas fa-check-square icon"></i></span> Debuting atop the US Billboard 200</li>
+                                <li class="list__li"><span class="blinking"><i class="fas fa-check-square icon"></i></span> 131,000 album-equivalent units</li>
+                                <li class="list__li"><span class="blinking"><i class="fas fa-check-square icon"></i></span> 100 million auditions</li>
+                                <li class="list__li"><span class="blinking"><i class="fas fa-check-square icon"></i></span> It was nominated for Best Rap Album at the 2020 Grammy Awards.</li>
+                            </ul>
+                        </div>
+                        <div class="price">
+                            <div class="price-block">
+                                <div class="price__sale">-75%</div>
+                                <div class="price__main">
+                                    <span>11.99$</span>
+                                    <span>3.99$</span>
+                                </div>
+                            </div>
+                            <div class="price-block"><a href="#" class="btn btn-primary mb-4" onclick="addtocart();">Add to cart</a></div>
+                            <div class="price-block">
+                                <a href="#" class="btn btn-outline-light mr-2" onclick="purchase();">How to purchase?</a>
+                                <a href="#" class="btn btn-outline-light" onmouseover="getcheaper();">Get cheaper!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right__descr block">
+                        <div class="title__sec">
+                            Description
+                        </div>
+                        <div class="right__descr-text">
+                            I Am > I Was (pronounced "I am greater than I was") is the second studio album by rapper 21 Savage, released on December 21, 2018. I Am > I Was features vocals by J. Cole, City Girls, Offset, Post Malone, Gunna, Lil Baby, Schoolboy Q, Project Pat, Childish Gambino, and Savage's cousin Young Nudy. The deluxe edition was released three days later, featuring one more song, which features an additional guest appearance from Travis Scott.
+                        </div>
+                    </div>
+                    <div class="right__descr block">
+                        <div class="title__sec">
+                            
+                        </div>
+                        <div class="right__descr-text">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/VbrEsOLu75c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="comments block">
+                        <div class="title__sec">
+                            Comments
+                        </div>
+                        <div class="comments-item">
+
+                        </div>
+
+                    </div>
+                    <div class="Subscribe block">
+                        <div class="title__sec">
+                            Subscribe
+                        </div>
+                        <div class="Subscribe-item">
+                            <form class="form" action="#">
+                                <input class="input" type="text" placeholder="E-mail">
+                                <input class="btn" type="submit" id="subscribe">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer>
+        
+    </footer>
+
+
+    <script>
+        function addtocart() {
+    alert('The album has been added to your cart.');
+}
+
+                function purchase() {
+                    alert('In order to purchase this product, you must add it to the cart and pay.')
+                }
+                    function getcheaper() {
+                        alert('By subscribing to the newsletter, you get a discount!')
+                    }
+
+                document.querySelector('#subscribe').onclick = function () {
+                    alert('You have been subscribed to the newsletter.')
+                }
+                function blink() {
+  $(".blinking").fadeOut(500);
+  $(".blinking").fadeIn(500);
+}
+setInterval(blink, 2000);
+
+
+// Get the modal
+photo = document.querySelector(".photo").style.background = 'url("img/item1.jpg") center center/cover no-repeat';
+var modal = document.getElementById("myModal");
+
+capt = document.querySelector(".title");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+document.querySelector(".photo").onclick = function(){
+  modal.style.display = "block";
+  modalImg.style.background = this.style.background;
+  captionText = capt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+    function play(){
+        var music = new Audio("Voice.mp3");
+        music.volume = 0.05;
+        music.play();
+    }
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/b820ea8d74.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
